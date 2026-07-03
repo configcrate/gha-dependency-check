@@ -40,9 +40,9 @@ gha-dependency-check .github/workflows
 
 ```text
 gha-dependency-check: scanned 2 workflow file(s), found 3 remote dependency reference(s)
-HEALTHY      actions/checkout@v4  .github/workflows/ci.yml:12  repository, ref, and path are available
+HEALTHY      actions/checkout@v7  .github/workflows/ci.yml:12  repository, ref, and path are available
 BLOCKED      actions-cool/issues-helper@v3  .github/workflows/issues.yml:18  Repository access blocked
-HEALTHY      actions/setup-go@v5  .github/workflows/ci.yml:13  repository, ref, and path are available
+HEALTHY      actions/setup-go@v6  .github/workflows/ci.yml:13  repository, ref, and path are available
 summary: 2 healthy, 1 finding(s), 0 API error(s)
 ```
 
@@ -105,8 +105,8 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-go@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-go@v6
         with:
           go-version: "1.25.x"
       - run: go run github.com/configcrate/gha-dependency-check/cmd/gha-dependency-check@latest .
