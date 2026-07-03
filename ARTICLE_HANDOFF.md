@@ -1,6 +1,10 @@
 # Article Handoff: gha-dependency-check
 
-Status: implementation complete, pending public release
+Status: released as v0.1.0
+
+Repository: https://github.com/configcrate/gha-dependency-check
+
+Release: https://github.com/configcrate/gha-dependency-check/releases/tag/v0.1.0
 
 ## Article angle
 
