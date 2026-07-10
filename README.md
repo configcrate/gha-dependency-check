@@ -2,6 +2,8 @@
 
 Find unavailable GitHub Actions dependencies before a workflow fails.
 
+Built by [ConfigCrate](https://configcrate.com/).
+
 `gha-dependency-check` scans remote `uses:` entries and asks the GitHub API whether
 the repository, ref, and optional action path still exist. It detects:
 
